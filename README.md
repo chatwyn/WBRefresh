@@ -1,16 +1,35 @@
-# WBPullToRefresh
-用swift实现了一个简单的下拉刷新的样式  
+# WBRefresh
+An easy way tp refresh. 
+
 <img src="http://7xpk2w.com1.z0.glb.clouddn.com/demo.gif" width="320"><br/>
 
-使用方法
+
+
+#Integration
+---
+You can use [Cocoapods](https://cocoapods.org/) to install WBRefresh adding it to your Podfile:
+
 ```
-    //设置刷新
-        tableView.refreshBlock { () -> Void in
-             
+platform :ios, '8.0'  
+use_frameworks!  
+
+pod 'WBRefresh'
+
+end
+```
+
+
+##Usage
+---
+
+```
+      tableView.refreshBlock { () -> Void in
+             //Do something you want
+            
         }
         
-    //结束刷新
-    tableView.endRefresh()
+	 tableView.endRefresh()
+    
 ```  
 
-##你的一颗star将是对我莫大的鼓励，万分感谢
+

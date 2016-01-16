@@ -19,7 +19,7 @@ extension UIScrollView{
         return viewWithTag(headerViewTag) as? WBRefreshHeaderView
     }
     
-    func refreshBlock(refreshBlock:()->Void){
+   public func refreshBlock(refreshBlock:()->Void){
         
         if let header = header{
             header.action = refreshBlock
@@ -31,12 +31,12 @@ extension UIScrollView{
     }
     
 
-    func endRefresh(){
+   public func endRefresh(){
         header?.endRefeshing()
         
     }
     
-    func removeObserve(){
+   public func removeObserve(){
         header?.scrollView.removeObserver(header!, forKeyPath: "contentOffSet")
     }
 }
@@ -198,8 +198,8 @@ class WBRefreshHeaderView: UIView{
 extension UIImage{
    private class func imageName(name:String) -> UIImage{
         
-        let str = NSBundle.mainBundle().pathForResource("WBRefresh", ofType: "bundle")
-        let bundle = NSBundle.init(path: str!)
+
+        let bundle = NSBundle.init(identifier: "WBRefresh")
         return UIImage.init(named:name, inBundle: bundle, compatibleWithTraitCollection: nil)!
         
     }
