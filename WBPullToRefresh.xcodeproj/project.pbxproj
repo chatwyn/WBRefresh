@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5B0094221C4944080020D5F5 /* WBRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0094201C4944080020D5F5 /* WBRefresh.swift */; };
-		5B2C9CE21C4A5F58007D1C3E /* WBRefresh.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5B2C9CE11C4A5F58007D1C3E /* WBRefresh.bundle */; };
+		5B67C2BD1C4A8A5500A61F65 /* WBRefresh.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5B67C2BB1C4A8A5500A61F65 /* WBRefresh.bundle */; };
+		5B67C2BE1C4A8A5500A61F65 /* WBRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B67C2BC1C4A8A5500A61F65 /* WBRefresh.swift */; };
 		5B75FC2D1C468F0D009D7449 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B75FC2C1C468F0D009D7449 /* AppDelegate.swift */; };
 		5B75FC321C468F0D009D7449 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B75FC301C468F0D009D7449 /* Main.storyboard */; };
 		5B75FC341C468F0D009D7449 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B75FC331C468F0D009D7449 /* Assets.xcassets */; };
@@ -17,8 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5B0094201C4944080020D5F5 /* WBRefresh.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBRefresh.swift; sourceTree = "<group>"; };
-		5B2C9CE11C4A5F58007D1C3E /* WBRefresh.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = WBRefresh.bundle; sourceTree = "<group>"; };
+		5B67C2BB1C4A8A5500A61F65 /* WBRefresh.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = WBRefresh.bundle; sourceTree = "<group>"; };
+		5B67C2BC1C4A8A5500A61F65 /* WBRefresh.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBRefresh.swift; sourceTree = "<group>"; };
 		5B75FC291C468F0D009D7449 /* WBPullToRefresh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WBPullToRefresh.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B75FC2C1C468F0D009D7449 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5B75FC311C468F0D009D7449 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -39,14 +39,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5B00941E1C4944080020D5F5 /* WBRefresh */ = {
+		5B67C2BA1C4A8A5500A61F65 /* WBRefresh */ = {
 			isa = PBXGroup;
 			children = (
-				5B2C9CE11C4A5F58007D1C3E /* WBRefresh.bundle */,
-				5B0094201C4944080020D5F5 /* WBRefresh.swift */,
+				5B67C2BB1C4A8A5500A61F65 /* WBRefresh.bundle */,
+				5B67C2BC1C4A8A5500A61F65 /* WBRefresh.swift */,
 			);
 			path = WBRefresh;
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 		};
 		5B75FC201C468F0D009D7449 = {
 			isa = PBXGroup;
@@ -67,7 +67,7 @@
 		5B75FC2B1C468F0D009D7449 /* WBPullToRefresh */ = {
 			isa = PBXGroup;
 			children = (
-				5B00941E1C4944080020D5F5 /* WBRefresh */,
+				5B67C2BA1C4A8A5500A61F65 /* WBRefresh */,
 				5B75FC421C46901E009D7449 /* TableViewController.swift */,
 				5B75FC2C1C468F0D009D7449 /* AppDelegate.swift */,
 				5B75FC301C468F0D009D7449 /* Main.storyboard */,
@@ -137,7 +137,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B2C9CE21C4A5F58007D1C3E /* WBRefresh.bundle in Resources */,
+				5B67C2BD1C4A8A5500A61F65 /* WBRefresh.bundle in Resources */,
 				5B75FC371C468F0D009D7449 /* LaunchScreen.storyboard in Resources */,
 				5B75FC341C468F0D009D7449 /* Assets.xcassets in Resources */,
 				5B75FC321C468F0D009D7449 /* Main.storyboard in Resources */,
@@ -152,7 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B75FC2D1C468F0D009D7449 /* AppDelegate.swift in Sources */,
-				5B0094221C4944080020D5F5 /* WBRefresh.swift in Sources */,
+				5B67C2BE1C4A8A5500A61F65 /* WBRefresh.swift in Sources */,
 				5B75FC431C46901E009D7449 /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

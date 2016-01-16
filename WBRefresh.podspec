@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name         = 'WBRefresh'
-    s.version      = '1.0.3'
+    s.version      = '1.0.4'
     s.summary      = 'An easy way to use refresh'
     s.homepage     = 'https://github.com/chatwyn/WBRefresh'
     s.license      = 'MIT'

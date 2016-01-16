@@ -13,14 +13,13 @@ private let promptText = "松开即可刷新"
 private let refreshtext = "正在为你疯狂刷新中"
 private let headerViewTag = 888
 
-
- extension UIScrollView{
+extension UIScrollView{
     
     var header:WBRefreshHeaderView?{
         return viewWithTag(headerViewTag) as? WBRefreshHeaderView
     }
     
-    func refreshBlock(refreshBlock:()->Void){
+   public func refreshBlock(refreshBlock:()->Void){
         
         if let header = header{
             header.action = refreshBlock
@@ -31,12 +30,13 @@ private let headerViewTag = 888
         }
     }
     
-    func endRefresh(){
+
+   public func endRefresh(){
         header?.endRefeshing()
         
     }
     
-    func removeObserve(){
+   public func removeObserve(){
         header?.scrollView.removeObserver(header!, forKeyPath: "contentOffSet")
     }
 }
@@ -198,8 +198,8 @@ class WBRefreshHeaderView: UIView{
 extension UIImage{
    private class func imageName(name:String) -> UIImage{
         
-        let str = NSBundle.mainBundle().pathForResource("WBRefresh", ofType: "bundle")
-        let bundle = NSBundle.init(path: str!)
+
+        let bundle = NSBundle.init(identifier: "WBRefresh")
         return UIImage.init(named:name, inBundle: bundle, compatibleWithTraitCollection: nil)!
         
     }
