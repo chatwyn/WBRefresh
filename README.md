@@ -1,5 +1,5 @@
 # WBRefresh
-An easy way tp refresh. 
+An easy way to refresh. 
 
 <img src="http://7xpk2w.com1.z0.glb.clouddn.com/demo.gif" width="320"><br/>
 
