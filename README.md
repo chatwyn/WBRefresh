@@ -7,7 +7,7 @@ An easy way to refresh.
 
 #Integration
 ---
-You can use [Cocoapods](https://cocoapods.org/) to install WBRefresh adding it to your Podfile:
+You can use [CocoaPods](https://cocoapods.org/) to install WBRefresh adding it to your Podfile:
 
 ```
 platform :ios, '8.0'  
