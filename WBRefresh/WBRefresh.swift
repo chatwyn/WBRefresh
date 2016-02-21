@@ -76,10 +76,10 @@ class WBRefreshHeaderView: UIView{
         self.action = refreshBlock
         self.scrollView = scrollView
         self.scrollView.addObserver(self, forKeyPath:"contentOffset", options:.Initial, context: nil)
+        self.scrollView.addObserver(self, forKeyPath: "frame", options: .Initial, context: nil)
         self.scrollView.addSubview(self)
         self.clipsToBounds = true
         
-        self.setUpRefreshImage()
         
     }
     
@@ -106,6 +106,10 @@ class WBRefreshHeaderView: UIView{
     
     //    初始化图片
     func setUpRefreshImage(){
+                
+        for item in self.subviews{
+            item.removeFromSuperview()
+        }
         
         let peopleImage = UIImage.imageName("walk3")
         let sunImage = UIImage.imageName("sun")
@@ -140,6 +144,12 @@ class WBRefreshHeaderView: UIView{
     //    KVO
     override func observeValueForKeyPath(keyPath: String?, ofObject object: AnyObject?, change: [String : AnyObject]?, context: UnsafeMutablePointer<Void>) {
         
+        if keyPath == "frame" {
+            
+            setUpRefreshImage()
+            
+            return
+        }
         //       有navigationController的情况下，scorllView 的inset.top为64
         var visibleHeight = max(0, -scrollView.contentOffset.y - scrollView.contentInset.top)
         
